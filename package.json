@@ -1,0 +1,31 @@
+{
+	"name": "devetjs",
+	"version": "2.0.6",
+	"description": "General utilities about JavaScript",
+	"main": "lib/cjs/index.js",
+	"module": "lib/esm/index.js",
+	"type": "module",
+	"scripts": {
+		"build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json"
+	},
+	"keywords": [
+		"devet",
+		"devetjs",
+		"devet js"
+	],
+	"author": "Devet",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "^18.7.3",
+		"typescript": "^4.7.4"
+	},
+	"files": [
+		"lib/"
+	],
+	"exports": {
+		"types": "./lib/cjs/index.d.ts",
+		"import": "./lib/esm/index.js",
+		"require": "./lib/cjs/index.js"
+	},
+	"types": "./lib/cjs/index.d.ts"
+}
