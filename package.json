@@ -1,11 +1,14 @@
 {
 	"name": "devetjs",
-	"version": "2.0.7",
+	"version": "2.0.10",
 	"description": "General utilities about JavaScript",
 	"main": "lib/cjs/index.js",
 	"module": "lib/esm/index.js",
+	"type": "module",
 	"scripts": {
-		"build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json"
+		"build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+		"commit": "git add . && git commit -m \"\" && git push origin main",
+		"recommit": "git add . && git commit --amend && git push origin main -f"
 	},
 	"keywords": [
 		"devet",
